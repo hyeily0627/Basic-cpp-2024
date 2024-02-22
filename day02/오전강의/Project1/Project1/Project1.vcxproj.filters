@@ -42,5 +42,11 @@
     <ClCompile Include="240222.point.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="240222.default2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="240222.defalut.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

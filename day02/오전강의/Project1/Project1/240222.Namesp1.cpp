@@ -1,15 +1,16 @@
 /*
 #include <iostream>
 using namespace std;
-namespace BestcomImpl { //이름 정의
-	void simpleFunc()
+namespace BestcomImpl  //이름 정의
+	{
+	void SimpleFunc()
 	{
 		cout << "Bestcom이 정의한 함수" << endl;
 	}
 }
 namespace ProgComImpl
 {
-	void Simplefunc()
+	void SimpleFunc()
 	{
 		cout << "ProgCom이 정의한 함수" << endl;
 
@@ -17,8 +18,8 @@ namespace ProgComImpl
 }
 
 int main() {
-	BestcomImpl::simpleFunc();
-	ProgComImpl::Simplefunc();
+	BestcomImpl::SimpleFunc();
+	ProgComImpl::SimpleFunc();
 	return 0;
 }
 */
