@@ -51,15 +51,15 @@ void Break(Car& car)
 int main()
 {
 	Car run99 = { "run99", 100, 0 };
-	Accel(run99);
-	Accel(run99);
+	Accel(run99);//(run99,98,10)
+	Accel(run99);//(run99,96,20)
 	ShowCarState(run99);
-	Break(run99);
+	Break(run99);//(run99,96,10)
 	ShowCarState(run99);
 
 	Car sped77 = { "sped77", 100, 0 };
-	Accel(sped77);
-	Break(sped77);
+	Accel(sped77);//(sped77,98,10)
+	Break(sped77);//(sped77,98,0)
 	ShowCarState(sped77);
 	return 0; 
 }

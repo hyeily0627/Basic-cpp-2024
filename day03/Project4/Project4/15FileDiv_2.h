@@ -6,7 +6,7 @@ private:
 	int num;
 
 public:
-	human(int anum);
+	human();
 	void humanlifo();
 
 	

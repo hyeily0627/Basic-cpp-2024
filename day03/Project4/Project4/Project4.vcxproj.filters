@@ -72,6 +72,18 @@
     <ClCompile Include="15FileDiv_2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15-1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15-2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="13Car.h">
@@ -81,6 +93,12 @@
       <Filter>소스 파일</Filter>
     </ClInclude>
     <ClInclude Include="15FileDiv_2.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="헤더.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="15.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>

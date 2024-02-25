@@ -28,6 +28,17 @@ struct Car
 	void Break();
 };
 
+int main(void)
+{
+	Car run99 = { "run99", 100, 0 };
+	run99.Accel();
+	run99.ShowCarState();
+	run99.Break();
+	run99.ShowCarState();
+	return 0;
+}
+
+
 void Car::ShowCarState()
 {
 	cout << "¼ÒÀ¯ÀÚID: " << gamerID << endl;
@@ -58,14 +69,4 @@ void Car::Break()
 	}
 
 	curSpeed -= CAR_CONST::BRK_STEP;
-}
-
-int main(void)
-{
-	Car run99 = { "run99", 100, 0 };
-	run99.Accel();
-	run99.ShowCarState();
-	run99.Break();
-	run99.ShowCarState();
-	return 0;
 }

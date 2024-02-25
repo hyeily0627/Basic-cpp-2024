@@ -1,9 +1,8 @@
 #include <iostream>
-#include "14FileDiv_2.h"
 
 class AClass
 {
-private :					// 생략가능함 
+private:					// 생략가능함 
 	int num;
 
 public:						// 접근제어지시자
@@ -11,16 +10,28 @@ public:						// 접근제어지시자
 	{
 		num = anum;
 	}
-	void Alnfo()
+
+	void AInfo()
 	{
 		std::cout << "A::num:" << num << std::endl;
 	}
 };
 
+AClass::AClass(int anum)
+{
+	num = anum;
+}
+void AClass::AInfo()
+{
+	std::cout << "AClass::num" << num << std::endl;
+
+}
+
 int main()
 {
 	AClass a(10);
-	a.Alnfo();
+	a.AInfo();
 
 	return 0;
+
 }
