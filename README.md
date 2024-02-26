@@ -46,10 +46,48 @@
 ## 2일차(정보처리기사 시험일/ 오전 결강) 
 
 - swap 함수 구현
-- 
+
+- // class 안에 들어 가는 함수 = Method
+
+- Default Value
+
+- Reference 함수
+	- 반환형 Reference Type
+   
+- Name Space
+
+- 전역,지역변수
+
+- C에서 메모리
+	- 스택 : 지역변수, 매개변수
+	- HEAP : 사용자에게 할당된 영역
+		= Malloc() -> free()반환 = 사용을 할려면 Malloc으로 할당을 받는다
+	- data: 함수, 전역변수, 상수, 문자 리터럴
+	
+	 ** A & B = 비트 And 연산자
+	 ** A && B = 논리 And 연산자 = 논리 곱
 
 ## 3일차 
+- Reference 함수(변수) = 계속
 
+- MALLOC & FREE => NEW & DELETE(대신)
+	= Malloc() -> free()반환 = 사용을 할려면 Malloc으로 할당을 받는다
+	-> HEAP : 사용자에게 할당된 영역
+	=> 사용을 할려면 Malloc()(C++: NEW)으로 할당을 받는다 => FREE(C++: DELETE로 반환)
+
+- 접근제어 지시자
+	- Public
+	- Protected
+	- Private
+
+- Class
+    - 멤버변수와 멤버함수로 구성
+    - 클래스 내부에서 멤버들의 선언으로 작성
+    - 멤버함수의 정의를 밖으로 빼낸다(스코프 연산자 사용)
+    - 일반적으로 멤버변수는 Private, 멤버함수 Public의 접근제한을 사용 
+	
+- C++ 파일분할 (C++ 와 Head 파일로 분할하는 것 배움)
+- 
 ## 4일차 
 
 ## 5일차
