@@ -39,7 +39,7 @@ public:
 class ColdPatient
 {
 public:
-	void TakeCONTAC600(const SinivelCap& cap) const { cap.Take(); }
+	void TakeCONTAC600(const CONTAC600& cap) const { cap.Take(); }
 	
 };
 
