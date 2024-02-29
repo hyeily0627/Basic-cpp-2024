@@ -179,6 +179,104 @@ SoSimple *ptrArr = new SoSimple[10]
 - C++ 에서의 Static
 
 ## 7일차
+- static 멤버변수(클래스 변수)
+	- const static
+	
+- mutable: const 함수에 대하여 예외를 둠
+
+- string 문자열 사용시 strcpy를 사용하지 않고 사용가능 
+(08Inheritance선생님출력.cpp 참고)
+
+- 상속(INHERITANCE)
+	- 상속 시 class (name) :public (name) 및 각 변수도 지정. 단, 확장 시 추가 해야함
+	- 상속 예시
+```
+class Person {
+private:
+    char name[50];
+    int age;
+public:
+    Person(const char* myname, int myage) : age(myage) {
+        strcpy(name, myname);
+    }
+    void WhatYourName() const {
+        cout << "My name is " << name << endl;
+    }
+    void HowOldAreYou() const {
+        cout << "I'm " << age << " years old" << endl;
+    }
+};
+
+class UnivStudent : public Person {
+private:
+    string major;
+public:
+    UnivStudent(const char* myname, int myage, const char* mymajor) : Person(myname, myage), major(mymajor) {
+        cout << "자식 생성자 호출" << endl;
+    }
+    void WhoAreYou() const {
+        WhatYourName();
+        HowOldAreYou();
+        cout << "My major is " << major << endl;
+    }
+};
+```
+	- 부모의 private를 사용하기 위하여 public에 함수를 만들어 return 값을 통해 사용가능
+		- string Showname(), int Showage() 은 private에 있는 변수 사용 불가하므로 만들어준 함수
+```
+class Myclass
+{
+private:
+	char name[30];
+	int age;
+public:
+	Myclass(const char* myname, int myage) : age(myage)
+	{
+		strcpy(name, myname);
+	}
+	string Showname() const
+	{
+		return name; 
+	}
+	int Showage()
+	{
+		return age;
+	}
+};
+
+class MyInfo : public Myclass
+{
+private:
+	char pNumber[20];
+public:
+	MyInfo(const char* myname, int myage, const char* phoneNumber)
+		:Myclass(myname,myage)
+	{
+		strcpy(pNumber, phoneNumber);
+	}
+	void printMyInfo()
+	{
+		cout << "나의 이름은 " << Showname() << "이고, 나이는 " << Showage() << "이며, 전화번호는 " << pNumber << "입니다" << endl;
+	}
+	
+};
+int main()
+{
+	MyInfo p1("오혜진", 27, "01076961487");
+	p1.printMyInfo();
+	return 0;
+}
+
+```
+
+
+
+
+## 8일차
+
+## 9일차 
+
+## 10일차
 
 ## 8일차
 
