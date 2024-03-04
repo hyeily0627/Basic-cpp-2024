@@ -270,9 +270,37 @@ int main()
 ```
 
 
-
-
 ## 8일차
+- 다형성
+	- 오버로딩(Overloading) : 다중정의 
+		- 메서드의 이름은 같고 매개변수의 유형과 개수가 다르도록 하는 것을 의미한다.
+		- 리턴값만을 다르게 갖는 오버로딩은 작성할 수 없다.
+	- 오버라이딩(Overriding) : 재정의, 상속관계에서 사용
+		- 상위 클래스가 가지고 있는 메서드를 하위 클래스가 재정의해서 사용하는 것을 의미한다.
+		```
+		class Person
+		{
+		public:
+			void Sleep()
+			{
+				cout << "sleep" << endl;
+			}
+		};
+		class Student : public Person
+		{
+		public :
+			void Study()
+			{
+				cout << "study" << endl; 
+			} 
+			void Sleep()					       // 오버라이딩 : 상속관계에서 사용
+			{
+				cout << "sleep now" << endl;  
+			}
+
+		};
+
+		```		
 
 ## 9일차 
 
