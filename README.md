@@ -190,7 +190,7 @@ SoSimple *ptrArr = new SoSimple[10]
 - 상속(INHERITANCE)
 	- 상속 시 class (name) :public (name) 및 각 변수도 지정. 단, 확장 시 추가 해야함
 	- 상속 예시
-```
+```C++
 class Person {
 private:
     char name[50];
@@ -221,9 +221,11 @@ public:
     }
 };
 ```
-	- 부모의 private를 사용하기 위하여 public에 함수를 만들어 return 값을 통해 사용가능
-		- string Showname(), int Showage() 은 private에 있는 변수 사용 불가하므로 만들어준 함수
-```
+
+- 부모의 private를 사용하기 위하여 public에 함수를 만들어 return 값을 통해 사용가능
+- string Showname(), int Showage() 은 private에 있는 변수 사용 불가하므로 만들어준 함수
+
+```C++
 class Myclass
 {
 private:
@@ -277,7 +279,7 @@ int main()
 		- 리턴값만을 다르게 갖는 오버로딩은 작성할 수 없다.
 	- 오버라이딩(Overriding) : 재정의, 상속관계에서 사용
 		- 상위 클래스가 가지고 있는 메서드를 하위 클래스가 재정의해서 사용하는 것을 의미한다.
-		```
+		```C++
 		class Person
 		{
 		public:
@@ -301,8 +303,76 @@ int main()
 		};
 
 		```		
+- 가상함수(virtual Function) : 가상 함수를 사용하면 파생 클래스에서 기본 클래스에 정의된 함수를 재정의할 수 있다. 
+	- 동적으로 할당되는 것을 동적 바인딩(dynamic binding)
+	- 가상 함수로 선언하기 위해서는 기본 클래스의 함수 선언 앞에 virtual 키워드를 붙여야 한다. 
+
+- 순수 가상 함수(pure virtual function): 함수의 정의가 없는 가상 함수. 즉, 함수의 몸체가 없고 실행부가 없으며, 세미콜론으로만 선언
+	- 형태: virtual 반환타입 함수이름(매개변수) = 0;
+	- 순수 가상 함수를 가진 클래스는 추상 클래스(abstract class)로 간주 -> 객체 생성 불가
+
 
 ## 9일차 
+- 연산자 오버로딩(Operator Overloading) : 우리가 만든 자료형(class)에도 사칙연산을 사용할 수 있어야하는데, 기본 연산자들을 사용할 수 없다. 따라서 연산자 오버로딩을 사용하여 기존의 연산자들을 사용하고자 하는 것이다. 
+	- 멤버함수, 전역함수로 이용가능
+	- 주의 사항
+		1. 본래의 의도를 벗어난 연산자 오버로딩 X
+		2. 연산자의 우선순위와 결합성은 바뀌지 않음
+		3. 매개변수의 디폴트 값 설정 불가
+		4. 연산자의 순수기능 제거 불가	
+
+```C++
+	class Myclass
+{
+private:
+	int num;
+public: 
+	Myclass(int a = 0) : num(a)
+	{ }
+	void print() const
+	{
+		cout << "value : " << num << endl;
+	}
+	/* 
+	멤버함수
+	
+	Myclass operator+(const Myclass& ref)
+	{
+		Myclass anum(num+ref.num);
+		return anum;
+	}
+	*/
+
+	// 전역함수 
+	friend Myclass operator+(const Myclass& ref, const Myclass& re);
+};
+
+Myclass operator+(const Myclass& ref, const Myclass& re)
+{
+	Myclass anum(ref.num + re.num);
+	return anum;
+}
+
+int main()
+{
+	Myclass a(10);
+	a.print();					//value : 10
+
+	Myclass b(a);
+	b.print();					//value : 10
+
+	Myclass c=b;
+	b.print();					//value : 10
+
+	Myclass d = a + b + c;
+	d.print();					//value : 30
+
+	return 0;
+}
+	```
+- 단항연산자의 오버로딩 
+
+
 
 ## 10일차
 
