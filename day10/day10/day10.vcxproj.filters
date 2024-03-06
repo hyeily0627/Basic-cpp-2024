@@ -15,46 +15,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="01_402p.cpp">
+    <ClCompile Include="01_449p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="02_407p.cpp">
+    <ClCompile Include="02_453P.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="03_414p.cpp">
+    <ClCompile Include="03배열인덱스개념.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="04Add.cpp">
+    <ClCompile Include="04Array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05_419p.cpp">
+    <ClCompile Include="05_457p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="06_425_오류잡자.cpp">
+    <ClCompile Include="06_473p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="07_427p.cpp">
+    <ClCompile Include="07_478p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="08_429p_미구동o.cpp">
+    <ClCompile Include="08_480p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="09_432p.cpp">
+    <ClCompile Include="09SmartPointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="10test01.cpp">
+    <ClCompile Include="10_483p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11_443P.cpp">
+    <ClCompile Include="11test_01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="12_446p.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="13test02.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="13test용석답안.cpp">
+    <ClCompile Include="띠용.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
