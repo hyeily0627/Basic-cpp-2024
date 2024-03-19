@@ -9,7 +9,7 @@ int main()
 
     strcpy(s2, s1);        // s1의 문자열을 s2로 복사
 
-    printf( s2);    // Hello
+    printf("%s\n", s2);    // Hello
 
     return 0;
 }
