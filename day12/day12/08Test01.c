@@ -12,7 +12,7 @@ protected:
 public:
     Product(int id = 0, int price = 0, string pro = "") : id(id), price(price), producer(pro) {}
 
-    // ¼ø¼ö °¡»ó ÇÔ¼ö
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
     virtual void show() = 0;
 
     int getId() const { return id; }
@@ -33,13 +33,13 @@ public:
 
     void show() 
     {
-        cout << "--- Ã¥ Á¤º¸ ---" << endl;
-        cout << "»óÇ° ID: " << getId() << endl;
-        cout << "°¡°Ý: " << getPrice() << endl;
-        cout << "»ý»êÀÚ: " << getProducer() << endl;
+        cout << "--- Ã¥ ï¿½ï¿½ï¿½ï¿½ ---" << endl;
+        cout << "ï¿½ï¿½Ç° ID: " << getId() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½: " << getPrice() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << getProducer() << endl;
         cout << "ISBN: " << ISBN << endl;
-        cout << "ÀúÀÚ: " << author << endl;
-        cout << "Á¦¸ñ: " << title << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½: " << author << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½: " << title << endl;
     }
 };
 
@@ -55,12 +55,12 @@ public:
 
     void show() 
     {
-        cout << "--- ÇÚµåÆù Á¤º¸ ---" << endl;
-        cout << "»óÇ° ID: " << getId() << endl;
-        cout << "°¡°Ý: " << getPrice() << endl;
-        cout << "»ý»êÀÚ: " << getProducer() << endl;
-        cout << "¸ðµ¨: " << model << endl;
-        cout << "RAM ¿ë·®: " << RAM << "GB" << endl;
+        cout << "--- ï¿½Úµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ---" << endl;
+        cout << "ï¿½ï¿½Ç° ID: " << getId() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½: " << getPrice() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << getProducer() << endl;
+        cout << "ï¿½ï¿½: " << model << endl;
+        cout << "RAM ï¿½ë·®: " << RAM << "GB" << endl;
     }
 };
 
@@ -77,13 +77,13 @@ public:
 
     void show()
     {
-        cout << "--- ÄÄÇ»ÅÍ Á¤º¸ ---" << endl;
-        cout << "»óÇ° ID: " << getId() << endl;
-        cout << "°¡°Ý: " << getPrice() << endl;
-        cout << "»ý»êÀÚ: " << getProducer() << endl;
-        cout << "¸ðµ¨: " << model << endl;
+        cout << "--- ï¿½ï¿½Ç»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ---" << endl;
+        cout << "ï¿½ï¿½Ç° ID: " << getId() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½: " << getPrice() << endl;
+        cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: " << getProducer() << endl;
+        cout << "ï¿½ï¿½: " << model << endl;
         cout << "CPU: " << cpu << endl;
-        cout << "RAM ¿ë·®: " << RAM << "GB" << endl;
+        cout << "RAM ï¿½ë·®: " << RAM << "GB" << endl;
     }
 };
 
@@ -92,29 +92,29 @@ int main()
     Product* productArray[100];
     int numProducts = 0;
 
-    cout << "***** »óÇ° °ü¸® ÇÁ·Î±×·¥À» ÀÛµ¿ÇÕ´Ï´Ù *****" << endl;
+    cout << "***** ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½Ûµï¿½ï¿½Õ´Ï´ï¿½ *****" << endl;
 
 
-        cout << "1. »óÇ°Ãß°¡, 2. »óÇ° Ãâ·Â, 3. »óÇ°Á¶È¸, 0. Á¾·á" << endl;
+        cout << "1. ï¿½ï¿½Ç°ï¿½ß°ï¿½, 2. ï¿½ï¿½Ç° ï¿½ï¿½ï¿½, 3. ï¿½ï¿½Ç°ï¿½ï¿½È¸, 0. ï¿½ï¿½ï¿½ï¿½" << endl;
         int num;
         cin >> num;
 
         if (num == 1)
         {
-            cout << "Ãß°¡ÇÒ »óÇ° Á¾·ù¸¦ ¼±ÅÃÇÏ¼¼¿ä <1. Ã¥, 2. ÇÚµåÆù, 3. ÄÄÇ»ÅÍ>" << endl;
+            cout << "ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ <1. Ã¥, 2. ï¿½Úµï¿½ï¿½ï¿½, 3. ï¿½ï¿½Ç»ï¿½ï¿½>" << endl;
             int type;
             cin >> type;
 
             int id, price;
             string producer;
 
-            cout << "»óÇ° ID: ";
+            cout << "ï¿½ï¿½Ç° ID: ";
             cin >> id;
 
-            cout << "°¡°Ý: ";
+            cout << "ï¿½ï¿½ï¿½ï¿½: ";
             cin >> price;
 
-            cout << "Á¦Á¶»ç: ";
+            cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ";
             cin >> producer;
 
             if (type == 1)
@@ -123,9 +123,9 @@ int main()
 
                 cout << "ISBN: ";
                 cin >> ISBN;
-                cout << "ÀúÀÚ: ";
+                cout << "ï¿½ï¿½ï¿½ï¿½: ";
                 cin >> author;
-                cout << "Á¦¸ñ: ";
+                cout << "ï¿½ï¿½ï¿½ï¿½: ";
                 cin >> title;
 
                 productArray[numProducts] = new Book(id, price, producer, ISBN, author, title);
@@ -135,9 +135,9 @@ int main()
                 string model;
                 int RAM;
 
-                cout << "¸ðµ¨¸í: ";
+                cout << "ï¿½ðµ¨¸ï¿½: ";
                 cin >> model;
-                cout << "·¥Å©±â(GB): ";
+                cout << "ï¿½ï¿½Å©ï¿½ï¿½(GB): ";
                 cin >> RAM;
 
                 productArray[numProducts] = new Handphone(id, price, producer, model, RAM);
@@ -147,11 +147,11 @@ int main()
                 string model, cpu;
                 int RAM;
 
-                cout << "¸ðµ¨: ";
+                cout << "ï¿½ï¿½: ";
                 cin >> model;
                 cout << "CPU: ";
                 cin >> cpu;
-                cout << "RAM ¿ë·®(GB): ";
+                cout << "RAM ï¿½ë·®(GB): ";
                 cin >> RAM;
 
                 productArray[numProducts] = new Computer(id, price, producer, model, cpu, RAM);
@@ -159,13 +159,13 @@ int main()
 
             numProducts++;
 
-            cout << "»óÇ°ÀÌ Ãß°¡µÇ¾ú½À´Ï´Ù." << endl;
+            cout << "ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½." << endl;
             return 0;
         }
 
         else if (num == 2)
         {
-            cout << "µî·ÏµÈ »óÇ° ¸ñ·Ï:" << endl;
+            cout << "ï¿½ï¿½Ïµï¿½ ï¿½ï¿½Ç° ï¿½ï¿½ï¿½:" << endl;
             for (int i = 0; i < numProducts; ++i)
             {
                 productArray[i]->show();
@@ -175,7 +175,7 @@ int main()
         else if (num == 3)
         {
             int productId;
-            cout << "Á¶È¸ÇÒ »óÇ° ID¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+            cout << "ï¿½ï¿½È¸ï¿½ï¿½ ï¿½ï¿½Ç° IDï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ";
             cin >> productId;
             bool found = false;
             for (int i = 0; i < numProducts; ++i)
@@ -188,12 +188,12 @@ int main()
                 }
             }
             if (!found)
-                cout << "ÇØ´ç »óÇ°À» Ã£À» ¼ö ¾ø½À´Ï´Ù." << endl;
+                cout << "ï¿½Ø´ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½." << endl;
         }
         else if (num == 0)
         {
-            cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù." << endl;
-            // µ¿Àû ÇÒ´çµÈ °´Ã¼µéÀÇ ¸Þ¸ð¸® ÇØÁ¦
+            cout << "ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½." << endl;
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½
             for (int i = 0; i < numProducts; ++i)
             {
                 delete productArray[i];
@@ -202,7 +202,7 @@ int main()
         }
         else
         {
-            cout << "Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù. ´Ù½Ã ¼±ÅÃÇØÁÖ¼¼¿ä." << endl;
+            cout << "ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½." << endl;
         }
 
    return 0;
@@ -215,13 +215,13 @@ class Book : ISBN, auther, title			//978-89-001-0001-01
 class Handphone: model, RAM
 class Computer: model, cpu, RAM
 
-*°´Ã¼ Æ÷ÀÎÅÍ ¹è¿­ »ç¿ë product[100]
-* string Å¬·¡½º »ç¿ë °¡´É
-*¸ÞÀÎÈ­¸é
------»óÇ°°ü¸® ÇÁ·Î±×·¥-----
-1 »óÇ°Ãß°¡ 2 »óÇ°Ãâ·Â 3 »óÇ°Á¶È¸ 0 Á¾·á
+*ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ product[100]
+* string Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+*ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½
+-----ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½-----
+1 ï¿½ï¿½Ç°ï¿½ß°ï¿½ 2 ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ 3 ï¿½ï¿½Ç°ï¿½ï¿½È¸ 0 ï¿½ï¿½ï¿½ï¿½
 
-1 or 2 or 3 À» ¼±ÅÃÇÑ °æ¿ì
-1 Ã¥ 2 ÇÚµåÆù 3 ÄÄÇ»ÅÍ
-¼±ÅÃ¸ñ·ÏÀ» ¶ç¿ö ÇØ´ç »óÇ°À» ¼±ÅÃÇÑ ÈÄ¿¡ Ãß°¡, Ãâ·Â, ¶Ç´Â °Ë»ö½ÇÇàµÈ´Ù.
+1 or 2 or 3 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+1 Ã¥ 2 ï¿½Úµï¿½ï¿½ï¿½ 3 ï¿½ï¿½Ç»ï¿½ï¿½
+ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½Ç°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä¿ï¿½ ï¿½ß°ï¿½, ï¿½ï¿½ï¿½, ï¿½Ç´ï¿½ ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½.
 */
